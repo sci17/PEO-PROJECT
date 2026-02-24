@@ -1,0 +1,58 @@
+{
+  "query": "SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE();",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT TABLE_NAME FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE();",
+  "rows": [
+    {
+      "TABLE_NAME": "__drizzle_migrations"
+    },
+    {
+      "TABLE_NAME": "projects"
+    },
+    {
+      "TABLE_NAME": "documents"
+    },
+    {
+      "TABLE_NAME": "tasks"
+    },
+    {
+      "TABLE_NAME": "personnel"
+    },
+    {
+      "TABLE_NAME": "annual_budgets"
+    },
+    {
+      "TABLE_NAME": "biddings"
+    },
+    {
+      "TABLE_NAME": "program_of_works"
+    },
+    {
+      "TABLE_NAME": "contract_history"
+    },
+    {
+      "TABLE_NAME": "contractors"
+    },
+    {
+      "TABLE_NAME": "performance_ratings"
+    },
+    {
+      "TABLE_NAME": "users"
+    },
+    {
+      "TABLE_NAME": "equipment_assignments"
+    },
+    {
+      "TABLE_NAME": "maintenance_equipment"
+    },
+    {
+      "TABLE_NAME": "maintenance_schedules"
+    },
+    {
+      "TABLE_NAME": "provincial_roads"
+    }
+  ],
+  "messages": [],
+  "stdout": "TABLE_NAME\n__drizzle_migrations\nprojects\ndocuments\ntasks\npersonnel\nannual_budgets\nbiddings\nprogram_of_works\ncontract_history\ncontractors\nperformance_ratings\nusers\nequipment_assignments\nmaintenance_equipment\nmaintenance_schedules\nprovincial_roads\n",
+  "stderr": "",
+  "execution_time_ms": 1644
+}

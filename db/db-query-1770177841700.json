@@ -1,0 +1,15 @@
+{
+  "query": "SELECT SUM(projectCost) as totalProjectCost, SUM(contractCost) as totalContractCost, COUNT(*) as totalProjects FROM projects WHERE projectCost IS NOT NULL;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT SUM(projectCost) as totalProjectCost, SUM(contractCost) as totalContractCost, COUNT(*) as totalProjects FROM projects WHERE projectCost IS NOT NULL;",
+  "rows": [
+    {
+      "totalProjectCost": "3074474441.90",
+      "totalContractCost": "2399648080.93",
+      "totalProjects": "490"
+    }
+  ],
+  "messages": [],
+  "stdout": "totalProjectCost\ttotalContractCost\ttotalProjects\n3074474441.90\t2399648080.93\t490\n",
+  "stderr": "",
+  "execution_time_ms": 1578
+}

@@ -1,0 +1,25 @@
+{
+  "query": "SELECT id, projectName, projectCost FROM projects WHERE projectCost > 0 LIMIT 3;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT id, projectName, projectCost FROM projects WHERE projectCost > 0 LIMIT 3;",
+  "rows": [
+    {
+      "id": "1",
+      "projectName": "Concreting of So. Tagbarasan Bgy. Sagpangan FMR",
+      "projectCost": "7700000.00"
+    },
+    {
+      "id": "2",
+      "projectName": "Concreting of Sto. Tomas FMR, Sto. Tomas-Maningning-New Rizal, Dumarao",
+      "projectCost": "7700000.00"
+    },
+    {
+      "id": "3",
+      "projectName": "Concreting of Marcilla Road (intermittent Section)",
+      "projectCost": "5000000.00"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tprojectName\tprojectCost\n1\tConcreting of So. Tagbarasan Bgy. Sagpangan FMR\t7700000.00\n2\tConcreting of Sto. Tomas FMR, Sto. Tomas-Maningning-New Rizal, Dumarao\t7700000.00\n3\tConcreting of Marcilla Road (intermittent Section)\t5000000.00\n",
+  "stderr": "",
+  "execution_time_ms": 1577
+}

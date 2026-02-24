@@ -1,0 +1,40 @@
+{
+  "query": "SELECT id, projectName, projectCost, contractCost FROM projects WHERE projectCost IS NOT NULL AND projectCost > 0 LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT id, projectName, projectCost, contractCost FROM projects WHERE projectCost IS NOT NULL AND projectCost > 0 LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "projectName": "Concreting of So. Tagbarasan Bgy. Sagpangan FMR",
+      "projectCost": "7700000.00",
+      "contractCost": "NULL"
+    },
+    {
+      "id": "2",
+      "projectName": "Concreting of Sto. Tomas FMR, Sto. Tomas-Maningning-New Rizal, Dumarao",
+      "projectCost": "7700000.00",
+      "contractCost": "7486991.48"
+    },
+    {
+      "id": "3",
+      "projectName": "Concreting of Marcilla Road (intermittent Section)",
+      "projectCost": "5000000.00",
+      "contractCost": "5347040.60"
+    },
+    {
+      "id": "4",
+      "projectName": "Concreting of Kaybulusan-Decala Rd. w/ 2 Barrel Box Culvert, Bgy. Caruray",
+      "projectCost": "7000000.00",
+      "contractCost": "6980434.55"
+    },
+    {
+      "id": "5",
+      "projectName": "Rehabilitation of Sandoval Water System, Bgy. Sandoval & Minara",
+      "projectCost": "4300000.00",
+      "contractCost": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\tprojectName\tprojectCost\tcontractCost\n1\tConcreting of So. Tagbarasan Bgy. Sagpangan FMR\t7700000.00\tNULL\n2\tConcreting of Sto. Tomas FMR, Sto. Tomas-Maningning-New Rizal, Dumarao\t7700000.00\t7486991.48\n3\tConcreting of Marcilla Road (intermittent Section)\t5000000.00\t5347040.60\n4\tConcreting of Kaybulusan-Decala Rd. w/ 2 Barrel Box Culvert, Bgy. Caruray\t7000000.00\t6980434.55\n5\tRehabilitation of Sandoval Water System, Bgy. Sandoval & Minara\t4300000.00\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1617
+}

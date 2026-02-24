@@ -1,0 +1,100 @@
+{
+  "query": "SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'projects' AND TABLE_SCHEMA = DATABASE();",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'projects' AND TABLE_SCHEMA = DATABASE();",
+  "rows": [
+    {
+      "COLUMN_NAME": "id"
+    },
+    {
+      "COLUMN_NAME": "rowNumber"
+    },
+    {
+      "COLUMN_NAME": "category"
+    },
+    {
+      "COLUMN_NAME": "projectName"
+    },
+    {
+      "COLUMN_NAME": "projectId"
+    },
+    {
+      "COLUMN_NAME": "ppdoCategory"
+    },
+    {
+      "COLUMN_NAME": "description"
+    },
+    {
+      "COLUMN_NAME": "location"
+    },
+    {
+      "COLUMN_NAME": "municipality"
+    },
+    {
+      "COLUMN_NAME": "implementingOffice"
+    },
+    {
+      "COLUMN_NAME": "fiscalYear"
+    },
+    {
+      "COLUMN_NAME": "sourceOfFund"
+    },
+    {
+      "COLUMN_NAME": "fundCategory"
+    },
+    {
+      "COLUMN_NAME": "projectCost"
+    },
+    {
+      "COLUMN_NAME": "contractCost"
+    },
+    {
+      "COLUMN_NAME": "calendarDays"
+    },
+    {
+      "COLUMN_NAME": "ntpDate"
+    },
+    {
+      "COLUMN_NAME": "extensionCount"
+    },
+    {
+      "COLUMN_NAME": "targetCompletionDate"
+    },
+    {
+      "COLUMN_NAME": "revisedCompletionDate"
+    },
+    {
+      "COLUMN_NAME": "dateCompleted"
+    },
+    {
+      "COLUMN_NAME": "progressPercent"
+    },
+    {
+      "COLUMN_NAME": "procurementMode"
+    },
+    {
+      "COLUMN_NAME": "status"
+    },
+    {
+      "COLUMN_NAME": "contractor"
+    },
+    {
+      "COLUMN_NAME": "contractorTin"
+    },
+    {
+      "COLUMN_NAME": "statusReason"
+    },
+    {
+      "COLUMN_NAME": "createdAt"
+    },
+    {
+      "COLUMN_NAME": "updatedAt"
+    },
+    {
+      "COLUMN_NAME": "createdById"
+    }
+  ],
+  "messages": [],
+  "stdout": "COLUMN_NAME\nid\nrowNumber\ncategory\nprojectName\nprojectId\nppdoCategory\ndescription\nlocation\nmunicipality\nimplementingOffice\nfiscalYear\nsourceOfFund\nfundCategory\nprojectCost\ncontractCost\ncalendarDays\nntpDate\nextensionCount\ntargetCompletionDate\nrevisedCompletionDate\ndateCompleted\nprogressPercent\nprocurementMode\nstatus\ncontractor\ncontractorTin\nstatusReason\ncreatedAt\nupdatedAt\ncreatedById\n",
+  "stderr": "",
+  "execution_time_ms": 1593
+}

@@ -1,0 +1,28 @@
+{
+  "query": "SELECT * FROM users LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT * FROM users LIMIT 5;",
+  "rows": [
+    {
+      "id": "1",
+      "openId": "Y2SMtDFxo5jjtgNJ8DH5HN",
+      "name": "Elmon Ray Juratil",
+      "email": "engr.elmon@gmail.com",
+      "loginMethod": "google",
+      "role": "admin",
+      "createdAt": "2026-02-04 03:08:08",
+      "updatedAt": "2026-02-04 06:56:18",
+      "lastSignedIn": "2026-02-04 06:54:17",
+      "division": "NULL",
+      "position": "NULL",
+      "isDivisionHead": "0",
+      "approvalStatus": "approved",
+      "approvedById": "NULL",
+      "approvalDate": "NULL",
+      "rejectionReason": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\topenId\tname\temail\tloginMethod\trole\tcreatedAt\tupdatedAt\tlastSignedIn\tdivision\tposition\tisDivisionHead\tapprovalStatus\tapprovedById\tapprovalDate\trejectionReason\n1\tY2SMtDFxo5jjtgNJ8DH5HN\tElmon Ray Juratil\tengr.elmon@gmail.com\tgoogle\tadmin\t2026-02-04 03:08:08\t2026-02-04 06:56:18\t2026-02-04 06:54:17\tNULL\tNULL\t0\tapproved\tNULL\tNULL\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1588
+}

@@ -1,0 +1,14 @@
+{
+  "query": "UPDATE projects SET projectCost = 7700000.0 WHERE rowNumber = 1;\nUPDATE projects SET projectCost = 7700000.0, contractCost = 7486991.48 WHERE rowNumber = 2;\nUPDATE projects SET projectCost = 5000000.0, contractCost = 5347040.6 WHERE rowNumber = 3;\nUPDATE projects SET projectCost = 7000000.0, contractCost = 6980434.55 WHERE rowNumber = 4;\nUPDATE projects SET projectCost = 4300000.0 WHERE rowNumber = 5;\nSELECT SUM(projectCost) as totalProjectCost, SUM(contractCost) as totalContractCost FROM projects;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute UPDATE projects SET projectCost = 7700000.0 WHERE rowNumber = 1;\nUPDATE projects SET projectCost = 7700000.0, contractCost = 7486991.48 WHERE rowNumber = 2;\nUPDATE projects SET projectCost = 5000000.0, contractCost = 5347040.6 WHERE rowNumber = 3;\nUPDATE projects SET projectCost = 7000000.0, contractCost = 6980434.55 WHERE rowNumber = 4;\nUPDATE projects SET projectCost = 4300000.0 WHERE rowNumber = 5;\nSELECT SUM(projectCost) as totalProjectCost, SUM(contractCost) as totalContractCost FROM projects;",
+  "rows": [
+    {
+      "totalProjectCost": "3074474441.90",
+      "totalContractCost": "2458251284.91"
+    }
+  ],
+  "messages": [],
+  "stdout": "totalProjectCost\ttotalContractCost\n3074474441.90\t2458251284.91\n",
+  "stderr": "",
+  "execution_time_ms": 2711
+}

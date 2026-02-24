@@ -1,0 +1,17 @@
+{
+  "query": "SELECT id, email, name, role, approvalStatus FROM users WHERE email LIKE '%elmon%';",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT id, email, name, role, approvalStatus FROM users WHERE email LIKE '%elmon%';",
+  "rows": [
+    {
+      "id": "1",
+      "email": "engr.elmon@gmail.com",
+      "name": "Elmon Ray Juratil",
+      "role": "admin",
+      "approvalStatus": "approved"
+    }
+  ],
+  "messages": [],
+  "stdout": "id\temail\tname\trole\tapprovalStatus\n1\tengr.elmon@gmail.com\tElmon Ray Juratil\tadmin\tapproved\n",
+  "stderr": "",
+  "execution_time_ms": 1575
+}

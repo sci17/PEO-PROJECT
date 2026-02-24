@@ -1,0 +1,130 @@
+{
+  "query": "SELECT DISTINCT contractor, contractorTin, COUNT(*) as projectCount, SUM(CAST(contractCost AS DECIMAL(18,2))) as totalContractValue FROM projects WHERE contractor IS NOT NULL AND contractor != '' GROUP BY contractor, contractorTin ORDER BY projectCount DESC LIMIT 20;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT DISTINCT contractor, contractorTin, COUNT(*) as projectCount, SUM(CAST(contractCost AS DECIMAL(18,2))) as totalContractValue FROM projects WHERE contractor IS NOT NULL AND contractor != '' GROUP BY contractor, contractorTin ORDER BY projectCount DESC LIMIT 20;",
+  "rows": [
+    {
+      "contractor": "E.V Villaos Trading and Construction Supply",
+      "contractorTin": "TIN 142-914-104",
+      "projectCount": "146",
+      "totalContractValue": "372456028.06"
+    },
+    {
+      "contractor": "Ivy Michelle Construction and Trading",
+      "contractorTin": "TIN 009-492-339",
+      "projectCount": "104",
+      "totalContractValue": "937117662.90"
+    },
+    {
+      "contractor": "BCT Trading and Construction",
+      "contractorTin": "TIN 102-698-654",
+      "projectCount": "64",
+      "totalContractValue": "310578164.61"
+    },
+    {
+      "contractor": "RD Abacial Construction",
+      "contractorTin": "TIN 327-679-690",
+      "projectCount": "62",
+      "totalContractValue": "NULL"
+    },
+    {
+      "contractor": "Maryknoll Builders and Supply",
+      "contractorTin": "TIN 105-802-318",
+      "projectCount": "57",
+      "totalContractValue": "93911577.82"
+    },
+    {
+      "contractor": "Johnstar Trading and Construction Supply",
+      "contractorTin": "TIN 912-843-647",
+      "projectCount": "55",
+      "totalContractValue": "145459783.52"
+    },
+    {
+      "contractor": "Carina Electrical Construction Supply",
+      "contractorTin": "TIN 188-374-116",
+      "projectCount": "48",
+      "totalContractValue": "14166058.33"
+    },
+    {
+      "contractor": "Julriz Trading and Construction",
+      "contractorTin": "TIN 495-740-401",
+      "projectCount": "44",
+      "totalContractValue": "NULL"
+    },
+    {
+      "contractor": "Kudz Trading and Construction",
+      "contractorTin": "TIN 188-527-256",
+      "projectCount": "41",
+      "totalContractValue": "45623049.65"
+    },
+    {
+      "contractor": "One Hundred Percent and Development Corp.",
+      "contractorTin": "TIN 168-154-730",
+      "projectCount": "38",
+      "totalContractValue": "NULL"
+    },
+    {
+      "contractor": "Triplestone Construction and Development Corporation",
+      "contractorTin": "TIN 009-149-175",
+      "projectCount": "37",
+      "totalContractValue": "NULL"
+    },
+    {
+      "contractor": "Conte Builders and Construction Supply",
+      "contractorTin": "TIN 923-929-215",
+      "projectCount": "32",
+      "totalContractValue": "42090548.03"
+    },
+    {
+      "contractor": "Samurai Construction",
+      "contractorTin": "TIN 919-621-019",
+      "projectCount": "25",
+      "totalContractValue": "34278961.72"
+    },
+    {
+      "contractor": "Reinastar Trading and Construction",
+      "contractorTin": "TIN 944-093-894-001",
+      "projectCount": "23",
+      "totalContractValue": "25882429.12"
+    },
+    {
+      "contractor": "Mazon Engineering and Construction",
+      "contractorTin": "TIN 273-819-199",
+      "projectCount": "21",
+      "totalContractValue": "NULL"
+    },
+    {
+      "contractor": "Hardshell Design and Construction",
+      "contractorTin": "TIN 211-391-300-001",
+      "projectCount": "21",
+      "totalContractValue": "8250949.51"
+    },
+    {
+      "contractor": "Mamsar Construction & Industrial Corporation",
+      "contractorTin": "TIN 273-578-000",
+      "projectCount": "19",
+      "totalContractValue": "416709467.72"
+    },
+    {
+      "contractor": "Beta-J Construction",
+      "contractorTin": "159-232-934",
+      "projectCount": "19",
+      "totalContractValue": "40294325.20"
+    },
+    {
+      "contractor": "Rhodamay Construction and Supply",
+      "contractorTin": "322-759-45",
+      "projectCount": "17",
+      "totalContractValue": "30114489.72"
+    },
+    {
+      "contractor": "Maximmus Construction",
+      "contractorTin": "NULL",
+      "projectCount": "16",
+      "totalContractValue": "NULL"
+    }
+  ],
+  "messages": [],
+  "stdout": "contractor\tcontractorTin\tprojectCount\ttotalContractValue\nE.V Villaos Trading and Construction Supply\tTIN 142-914-104\t146\t372456028.06\nIvy Michelle Construction and Trading\tTIN 009-492-339\t104\t937117662.90\nBCT Trading and Construction\tTIN 102-698-654\t64\t310578164.61\nRD Abacial Construction\tTIN 327-679-690\t62\tNULL\nMaryknoll Builders and Supply\tTIN 105-802-318\t57\t93911577.82\nJohnstar Trading and Construction Supply\tTIN 912-843-647\t55\t145459783.52\nCarina Electrical Construction Supply\tTIN 188-374-116\t48\t14166058.33\nJulriz Trading and Construction\tTIN 495-740-401\t44\tNULL\nKudz Trading and Construction\tTIN 188-527-256\t41\t45623049.65\nOne Hundred Percent and Development Corp.\tTIN 168-154-730\t38\tNULL\nTriplestone Construction and Development Corporation\tTIN 009-149-175\t37\tNULL\nConte Builders and Construction Supply\tTIN 923-929-215\t32\t42090548.03\nSamurai Construction\tTIN 919-621-019\t25\t34278961.72\nReinastar Trading and Construction\tTIN 944-093-894-001\t23\t25882429.12\nMazon Engineering and Construction\tTIN 273-819-199\t21\tNULL\nHardshell Design and Construction\tTIN 211-391-300-001\t21\t8250949.51\nMamsar Construction & Industrial Corporation\tTIN 273-578-000\t19\t416709467.72\nBeta-J Construction\t159-232-934\t19\t40294325.20\nRhodamay Construction and Supply\t322-759-45\t17\t30114489.72\nMaximmus Construction\tNULL\t16\tNULL\n",
+  "stderr": "",
+  "execution_time_ms": 1671
+}

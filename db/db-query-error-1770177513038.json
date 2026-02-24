@@ -1,0 +1,8 @@
+{
+  "query": "SELECT id, name, cost, contractCost FROM projects WHERE cost > 0 OR contractCost > 0 LIMIT 10;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT id, name, cost, contractCost FROM projects WHERE cost > 0 OR contractCost > 0 LIMIT 10;",
+  "returncode": 1,
+  "logs": [
+    "ERROR 1054 (42S22) at line 1: Unknown column 'cost' in 'where clause'"
+  ]
+}

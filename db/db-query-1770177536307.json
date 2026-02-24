@@ -1,0 +1,9 @@
+{
+  "query": "SELECT id, projectName, projectCost, contractCost FROM projects WHERE projectCost IS NOT NULL AND projectCost > 0 LIMIT 5;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SELECT id, projectName, projectCost, contractCost FROM projects WHERE projectCost IS NOT NULL AND projectCost > 0 LIMIT 5;",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1641
+}

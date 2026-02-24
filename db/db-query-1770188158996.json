@@ -1,0 +1,58 @@
+{
+  "query": "SHOW TABLES;",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway03.us-east-1.prod.aws.tidbcloud.com --port 4000 --user shtsEUnmA6hopG8.9f84e79b7b26 --database ajbcHAe3fWYB3LHzKhBthg --execute SHOW TABLES;",
+  "rows": [
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "__drizzle_migrations"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "annual_budgets"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "biddings"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "contract_history"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "contractors"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "documents"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "equipment_assignments"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "maintenance_equipment"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "maintenance_schedules"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "performance_ratings"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "personnel"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "program_of_works"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "projects"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "provincial_roads"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "tasks"
+    },
+    {
+      "Tables_in_ajbcHAe3fWYB3LHzKhBthg": "users"
+    }
+  ],
+  "messages": [],
+  "stdout": "Tables_in_ajbcHAe3fWYB3LHzKhBthg\n__drizzle_migrations\nannual_budgets\nbiddings\ncontract_history\ncontractors\ndocuments\nequipment_assignments\nmaintenance_equipment\nmaintenance_schedules\nperformance_ratings\npersonnel\nprogram_of_works\nprojects\nprovincial_roads\ntasks\nusers\n",
+  "stderr": "",
+  "execution_time_ms": 1594
+}
